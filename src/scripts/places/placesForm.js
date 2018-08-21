@@ -8,17 +8,34 @@ const placesFormManager = Object.create(null, {
     renderPlacesForm: {
         value: () => {
             return `
+            <section class="hero is-dark is-bold">
+                <div class="hero-body">
+                    <div class="container">
+                        <h1 class="title">
+                            Streator's Fvorite Places
+                        </h1>
+                    </div>
+                </div>
+            </section>
                 <fieldset>
                     <label for="placesTitle">Title:</label>
-                    <input required type="text" id="placesTitle">
+                        <div class="field">
+                            <div class="control">
+                                <input id="placesTitle" class="input is-medium" type="text" placeholder="Location Name">
+                            </div>
+                        </div>
                 </fieldset>
 
                 <fieldset>
                     <label for="placesContent">Content:</label>
-                    <textarea id="placesContent"></textarea>
+                        <div class="field">
+                            <div class="control">
+                                <textarea id="placesContent" class="textarea is-medium" type="text" placeholder="Medium textarea"></textarea>
+                            </div>
+                        </div>
                 </fieldset>
 
-                <button id="savePlacesButton">Save New Place</button>
+                <a class="button is-dark is-normal" id="savePlacesButton">Save New Place</a>
             `
         }
     }
@@ -27,3 +44,7 @@ const placesFormManager = Object.create(null, {
 
 
 module.exports = placesFormManager
+
+
+
+
