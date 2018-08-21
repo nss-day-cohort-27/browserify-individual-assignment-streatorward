@@ -12,25 +12,23 @@ const placesFormManager = Object.create(null, {
                 <div class="hero-body">
                     <div class="container">
                         <h1 class="title">
-                            Streator's Fvorite Places
+                            Streator's Favorite Places
                         </h1>
                     </div>
                 </div>
             </section>
                 <fieldset>
-                    <label for="placesTitle">Title:</label>
-                        <div class="field">
-                            <div class="control">
+                    <label class="title is-2" for="placesTitle">Title:</label>
+                            <div class="column is-half">
                                 <input id="placesTitle" class="input is-medium" type="text" placeholder="Location Name">
                             </div>
                         </div>
                 </fieldset>
 
                 <fieldset>
-                    <label for="placesContent">Content:</label>
-                        <div class="field">
-                            <div class="control">
-                                <textarea id="placesContent" class="textarea is-medium" type="text" placeholder="Medium textarea"></textarea>
+                    <label class="title is-2" for="placesContent">Content:</label>
+                            <div class="column is-half">
+                                <textarea id="placesContent" class="textarea is-medium" type="text" placeholder="All About the Place!"></textarea>
                             </div>
                         </div>
                 </fieldset>
